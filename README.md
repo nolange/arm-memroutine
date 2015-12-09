@@ -1,8 +1,8 @@
 # arm-memroutine
-Efficient C-Routines for old and new 32bit ARMs
+Efficient Assembly-Routines for old and new 32bit ARMs
 
-This startet as simple routine on an Freescale imx28 running an RTOS. The routines in newlib have optimized assembly for modern ARMs,
-but use simple C-Functions for older ones. Some simple test gave 2-3 times speedup, particularly most improvements with uncached access.
+This started as simple routine on an Freescale imx28 running an RTOS. The routines in newlib had optimized assembly for modern ARMs,
+but used simple C-Functions for older ones. Tests reported 2-3 times speedup, particularly biggest improvements with uncached access.
 
 The real trouble came with supporting ALL 32bit ARM processors (down to arm2), both Thumb and ARM mode... and being able to test the various different
 flavours of code. Recently I bought an RK3288 based board running Linux, allowing convenient testing and debugging.
